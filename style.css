@@ -8,11 +8,17 @@
     --transition-speed: 600ms;
 }
 
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
 body {
     color: grey;
     background-color: #171717;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -25,11 +31,6 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background: darkgoldenrod;
-}
-
-main {
-    margin-left: 5rem;
-    padding: 1rem;
 }
 
 /*header*/
@@ -51,7 +52,7 @@ h1{
 }
 
 .navbar {
-    /*z-index: 5;*/
+    z-index: 5;
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 600ms ease;
@@ -146,7 +147,61 @@ h1{
 
 /*Section*/
 section{
+    width: 100%;
+}
 
+.item-l{
+    width: 60%;
+    height: 250px;
+    background-color: #111111;
+    text-align: left;
+    color: var(--text-primary);
+    margin-bottom: 100px;
+    display: block;
+    margin-left: 80px;
+    background-image: url("pic/babyduck.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.item-r{
+    width: 60%;
+    background-color: #111111;
+    text-align: right;
+    color: var(--text-primary);
+    display: block;
+    height: 219px;
+    margin-bottom: 0;
+    float: right;
+    background-image: url("pic/enteblume.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.sec-hleft{
+    width: 100%;
+    margin: 20px;
+    float: left;
+}
+
+.sec-hright{
+    width: 100%;
+    margin: 20px;
+    float: right;
+}
+
+.sec-ltext{
+    font-size: 20px;
+    width: 45%;
+    float: left;
+    margin-left: 20px;
+}
+
+.sec-rtext{
+    font-size: 20px;
+    width: 45%;
+    float: right;
+    margin-right: 20px;
 }
 
 /*Footer*/
@@ -229,6 +284,42 @@ footer{
 }
 
 /* Small screens */
+@media only screen and (max-width: 900px) {
+    .item-l{
+        width: 80%;
+    }
+
+    .item-r{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .inner-footer{
+        margin: 0 auto;
+    }
+
+    .footer .inner-footer{
+        width: 90%;
+    }
+
+    .inner-footer .logo-container,
+    .inner-footer .footer-third{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .item-l{
+        width: 100%;
+    }
+
+    .item-r{
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .navbar {
         bottom: 0;
@@ -251,21 +342,9 @@ footer{
     main {
         margin: 0;
     }
-}
 
-@media only screen and (max-width: 800px) {
-    .inner-footer{
-        margin: 0 auto;
-    }
-
-    .footer .inner-footer{
-        width: 90%;
-    }
-
-    .inner-footer .logo-container,
-    .inner-footer .footer-third{
-        width: 100%;
-        margin-bottom: 30px;
+    .item-l{
+        margin-left: 0;
     }
 }
 
@@ -299,5 +378,9 @@ footer{
     .navbar:hover .logo-text
     {
         left: 0;
+    }
+
+    .inner-footer{
+        margin-left: 100px;
     }
 }
