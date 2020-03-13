@@ -284,6 +284,12 @@ footer{
 }
 
 /* Small screens */
+@media only screen and (max-width: 950px) {
+    .inner-footer .footer-third{
+        width: calc(15.85% - 20px);
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .item-l{
         width: 80%;
@@ -345,6 +351,25 @@ footer{
 
     .item-l{
         margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .item-l{
+        height: 650px;
+        width: 100%;
+        background-position: bottom;
+    }
+
+    .sec-ltext,
+    .sec-rtext{
+        width: 100%;
+    }
+
+    .item-r{
+        height: 420px;
+        width: 100%;
+        background-position: bottom;
     }
 }
 
