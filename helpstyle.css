@@ -1,0 +1,52 @@
+section{
+    text-align: center;
+}
+
+.in-typed{
+    margin: 20px;
+    height: 50px;
+}
+
+.in-typed span{
+    font-size: 30px;
+}
+
+.item-l{
+    height: 480px;
+    width: 100%;
+    background-image: url("pic/Ducknest.jpg");
+    float: left;
+}
+
+.sec-ltext{
+    width: 40%;
+}
+
+@media only screen and (max-width: 861px) {
+    .sec-hleft,
+    .sec-ltext{
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .item-l{
+        height: 450px;
+        background-position: bottom;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .item-l{
+        height: 660px;
+        background-position: 80% 100%;
+    }
+    .sec-hleft,
+    .sec-ltext{
+        color: #b6b6b6;
+    }
+
+    .sec-ltext{
+        width: 80%;
+    }
+}
