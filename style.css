@@ -71,6 +71,7 @@ h1{
 .nav-item {
     width: 100%;
 }
+
 /*
 .nav-item:last-child {
     margin-top: auto;
@@ -140,6 +141,7 @@ h1{
     left: -999px;
     transition: var(--transition-speed);
 }
+
 
 .navbar:hover .logo svg {
     transform: rotate(-180deg);

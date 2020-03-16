@@ -32,13 +32,6 @@ section{
 
 @media only screen and (max-width: 800px) {
     .item-l{
-        height: 450px;
-        background-position: bottom;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .item-l{
         height: 660px;
         background-position: 80% 100%;
     }
