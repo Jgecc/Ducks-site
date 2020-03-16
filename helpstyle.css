@@ -16,6 +16,7 @@ section{
     width: 100%;
     background-image: url("pic/Ducknest.jpg");
     float: left;
+    margin-bottom: 0;
 }
 
 .sec-ltext{

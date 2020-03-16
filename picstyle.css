@@ -1,0 +1,38 @@
+section{
+    text-align: center;
+}
+
+.in-typed{
+    margin: 20px;
+    height: 40px;
+}
+
+.in-typed span{
+    font-size: 30px;
+}
+
+.item-l{
+    height: auto;
+    width: auto;
+    margin-bottom: 10px;
+    background-image: none;
+    background-position: left;
+}
+
+.item-l img{
+    display: block;
+}
+
+.pic-list li{
+    display: flow-root;
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+
+.pic-list li:last-child{
+    margin-bottom: 0;
+}
+
+.pic-list li img{
+    max-width: 100%;
+}
