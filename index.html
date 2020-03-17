@@ -12,12 +12,13 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <ul class="navbar-nav">
-                <li class="logo">
-                    <a href="index.html" class="nav-link">
+                <li class="logo" onclick="big()">
+                    <a href="#" class="nav-link">
                         <span class="link-text logo-text">Ducks</span>
                         <svg
+                                id="logo-spin"
                                 aria-hidden="true"
                                 focusable="false"
                                 data-prefix="fad"
@@ -68,7 +69,7 @@
                             >
                             </path>
                         </svg>
-                        <span class="link-text">Home</span>
+                        <span class="link-text" id="link-text1">Home</span>
                     </a>
                 </li>
 
@@ -96,7 +97,7 @@
                             >
                             </path>
                         </svg>
-                        <span class="link-text">Pictures</span>
+                        <span class="link-text" id="link-text2">Pictures</span>
                     </a>
                 </li>
 
@@ -123,7 +124,7 @@
                             >
                             </path>
                         </svg>
-                        <span class="link-text">Ducksdrugs</span>
+                        <span class="link-text" id="link-text3">Ducksdrugs</span>
                     </a>
                 </li>
 
@@ -151,7 +152,7 @@
                             >
                             </path>
                         </svg>
-                        <span class="link-text">Why?</span>
+                        <span class="link-text" id="link-text4">Why?</span>
                     </a>
                 </li>
 
@@ -180,7 +181,7 @@
                             >
                             </path>
                         </svg>
-                        <span class="link-text">Help</span>
+                        <span class="link-text" id="link-text5">Help</span>
                     </a>
                 </li>
             </ul>
@@ -188,10 +189,13 @@
         <h1>Home</h1>
     </header>
     <section>
+        <div class="in-typed">
+            <span id="typed1"></span>
+        </div>
         <div class="item-l" data-aos="fade-right">
-        <h1 class="sec-hleft">What is it about?</h1>
-        <div class="sec-ltext">This is a duck only website for anyone who loves these little animals as much as I do. Controlling the world with ducks is probably my biggest goal</div>
-    </div>
+            <h1 class="sec-hleft">What is it about?</h1>
+            <div class="sec-ltext">This is a duck only website for anyone who loves these little animals as much as I do. Controlling the world with ducks is probably my biggest goal</div>
+        </div>
         <div class="item-r" data-aos="fade-left">
             <h1 class="sec-hright">What are you waiting for?</h1>
             <div class="sec-rtext">Just start searching for topics on this website about ducks! They will help you in every way. And don't forget that the ducks are the best  thing in the world.</div>
@@ -299,5 +303,49 @@
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="anim.js"></script>
+    <script src="typed.js"></script>
+    <script>
+        var typed1 = new Typed('#typed1', {
+            strings: ['Home'],
+            typeSpeed: 70,
+        });
+
+        let nav_ani = true;
+
+        function big(){
+            let nav = document.querySelector("#navbar");
+            let link_text1 = document.querySelector("#link-text1");
+            let link_text2 = document.querySelector("#link-text2");
+            let link_text3 = document.querySelector("#link-text3");
+            let link_text4 = document.querySelector("#link-text4");
+            let link_text5 = document.querySelector("#link-text5");
+            let logo_text = document.querySelector(".logo-text");
+            let logo_spin = document.querySelector("#logo-spin");
+
+            if(nav_ani) {
+                nav.style.width = "16rem";
+                link_text1.style.display = "inline";
+                link_text2.style.display = "inline";
+                link_text3.style.display = "inline";
+                link_text4.style.display = "inline";
+                link_text5.style.display = "inline";
+                logo_text.style.left = "0";
+                logo_spin.style.marginLeft = "11rem";
+                logo_spin.style.transform = "rotate(-180deg)";
+                nav_ani = false;
+            }else {
+                nav.style.width = "";
+                link_text1.style.display = "";
+                link_text2.style.display = "";
+                link_text3.style.display = "";
+                link_text4.style.display = "";
+                link_text5.style.display = "";
+                logo_text.style.left = "";
+                logo_spin.style.marginLeft = "";
+                logo_spin.style.transform = "";
+                nav_ani = true;
+            }
+        }
+    </script>
 </body>
 </html>
