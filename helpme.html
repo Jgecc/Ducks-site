@@ -193,9 +193,13 @@
         <div class="in-typed">
             <span id="typed1"></span>
         </div>
-        <div class="item-l" data-aos="fade-up">
+        <div class="item-l" data-aos="fade-left">
             <h1 class="sec-hleft">What can you do?</h1>
             <div class="sec-ltext">Not very much. Just follow me on Instagram and write me there if you want to help me develop this website, for example :)</div>
+        </div>
+        <div class="item-r" data-aos="fade-right">
+            <h1 class="sec-hright">Report stuff</h1>
+            <div class="sec-rtext">Do you have any suggestions for improvements or have you found a bug? New pictures can also be sent here :) Tell me via email or social media (at the bottom). <br> <input type="button" value="Send Email" onclick="sendEmail()" class="button"/></div>
         </div>
     </section>
     <footer>
@@ -235,7 +239,7 @@
             <div class="footer-third">
                 <h1>Need Help?</h1>
                 <a href="pictures.html">Watch some ducks</a>
-                <a href="https://jgecc.github.io">Developer</a>
+                <a href="https://jgecc.com">Developer</a>
             </div>
 
             <div class="footer-third">
@@ -302,6 +306,7 @@
     <script src="scripts/anim.js"></script>
     <script src="scripts/typed.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/email.js"></script>
     <script>
         var typed1 = new Typed('#typed1', {
             strings: ['Help is awsome!'],
